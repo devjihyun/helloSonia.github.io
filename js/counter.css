@@ -1,0 +1,8 @@
+.box_counter{width:150px;padding:25px;background-color:#000;color:#fff}
+.lab_counter{display:inline-block}
+.inp_number{width:85px;}
+.wrap_btns{display:block;padding-top:10px;text-align:center}
+.wrap_btns button{display:inline-block;font-weight:bold}
+.wrap_btns .btn_up{color:red}
+.wrap_btns .btn_down{color:blue}
+.wrap_btns .btn_reset{color:grey}
