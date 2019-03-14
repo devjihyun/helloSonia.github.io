@@ -1,4 +1,5 @@
 # sonia.github.io
 
 ### COUNTER 만들기
-#### link: helloSonia.github.io/counter.html
+#### [링크바로가기](helloSonia.github.io/counter.html)
+
