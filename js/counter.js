@@ -5,6 +5,7 @@ var down = document.getElementById('btnDown');
 var reset = document.getElementById('btnReset');
 var numVal = document.getElementById('num').value;
 
+
 function numUp() {
     document.getElementById('num').value = numVal++;
 }
@@ -19,7 +20,5 @@ function numReset() {
 up.addEventListener('click', numUp);
 down.addEventListener('click', numDown);
 reset.addEventListener('click', numReset);
-
-
 
 
