@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>COUNT</title>
-    <link rel="stylesheet" href="css/counter.css">
+    <style>
+    .inp_number{width:50px;text-align:center}
+    </style>
 </head>
 <body>
     <div class="box_counter">
-        <h1>counter</h1>
-        <label for="num" class="lab_counter">Number</label>
-        <input type="text" id="num" class="inp_number" value="0">
-        <span class="wrap_btns">
-            <button id="btnUp" class="btn_up">UP</button>
-            <button id="btnDown" class="btn_down">DOWN</button>
-            <button id="btnReset" class="btn_reset">RESET</button>
-        </span>
+        <button id="btnMinus" class="btn_minus">-</button>
+        <input type="text" id="num" class="inp_number" value="0" onkeydown='return onlyNumber(event)' onkeyup='removeChar(event)' />
+        <button id="btnPlus" class="btn_plus">+</button>
     </div>
     <script src="js/counter.js"></script>
 </body>
