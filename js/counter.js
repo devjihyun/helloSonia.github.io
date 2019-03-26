@@ -9,8 +9,6 @@ function plus(){
 }
 
 function minus(){
-    if (num > 0){
-        num--;
-        count.value = num;
-    }
+    num--;
+    count.value = num;
 }
