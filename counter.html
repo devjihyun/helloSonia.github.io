@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>COUNT</title>
     <style>
-    .inp_number{width:50px;text-align:center}
+    .inp_count{width:50px;text-align:center}
     </style>
 </head>
 <body>
-    <div class="box_counter">
-        <button id="btnMinus" class="btn_minus">-</button>
-        <input type="text" id="num" class="inp_number" value="0" onkeydown='return onlyNumber(event)' onkeyup='removeChar(event)' />
-        <button id="btnPlus" class="btn_plus">+</button>
-    </div>
-    <script src="js/counter.js"></script>
+    <button type="button" id="btnMinus" onclick="minus()">-</button>
+    <input type="text" id="count" name="number" value="0" class="inp_count" />
+    <button type="button" id="btnPlus" onclick="plus()">+</button>
+        
+<script src="js/counter.js"></script>
 </body>
 </html>
