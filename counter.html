@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>COUNT</title>
     <style>
-    .inp_count{width:50px;text-align:center}
+    #count{width:50px;text-align:center}
     </style>
 </head>
 <body>
-    <button type="button" id="btnMinus" onclick="minus()">-</button>
-    <input type="text" id="count" name="number" value="0" class="inp_count" />
-    <button type="button" id="btnPlus" onclick="plus()">+</button>
+    <button type="button" id="btnMinus">-</button>
+    <input sype="text" id="count" onkeydown="putNumber(event)" style="ime-mode:disabled;">
+    <button type="button" id="btnPlus">+</button>
         
 <script src="js/counter.js"></script>
 </body>
