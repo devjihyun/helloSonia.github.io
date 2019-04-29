@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+body {
+    background-color: #d7eaaa;
+}
+
+.btn_click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -65px;
+    width: 130px;
+    height: 50px;
+    background-color: #ffd965;
+    font-size: 15px;
+    color: #ee7e68;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-frame {
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:50;
+	visibility:hidden;
+} 
+
+.modal-body {
+    position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	height: 400px;
+	margin-top: -200px;
+	top: 50%;
+	z-index: 100;
+	width: 500px;
+	border-radius: 5px;
+	background: #FFF;
+}
+
+.modal-inner {
+    position: relative;
+    height: 340px;
+    padding: 30px;
+}
+
+.btn_close {
+    position: absolute;
+    right: 30px;
+    bottom:30px;
+    width: 70px;
+    height: 30px;
+    background-color: #ee7e68;
+    color: #ffd965;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.show {
+    visibility: visible
+}
