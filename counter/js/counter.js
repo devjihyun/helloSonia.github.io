@@ -28,5 +28,17 @@
         var code = event.keyCode || event.which;
         if (code == 8 || code == 46 || code == 37 || code == 39) return;
         else event.target.value = event.target.value.replace(/[^0-9-]/g, '');
-    });
+
+        var num = parseInt(this.value, 10),
+        min = -10,
+        max = 10;
+
+        if (isNaN(num)) {
+            this.value = "";
+            return;
+        }
+
+        this.value = Math.max(num, min);
+        this.value = Math.min(num, max);
+        });
 })();
