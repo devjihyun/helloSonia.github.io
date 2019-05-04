@@ -2,18 +2,25 @@
 
 
 (function () {
-// 1단계 - 버튼 클릭시 레이어팝업이 뜨고, 팝업내의 닫기버튼이나 x를 클릭시 닫힙니다.
+var modal = document.getElementById("modalframe");
 
+// 팝업 띄우기 함수 선언 
 function showPopup () {
-    var element = document.getElementById("modalframe");
-    element.classList.add("show");
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+    document.body.style.overflowY = "hidden";
 }
-document.getElementById("clickBtn").addEventListener("click", showPopup);
 
+// 닫기 버튼 또는 외부 클릭시 팝업 닫기 함수 선언
 function closePopup () {
-    var element = document.getElementById("modalframe");
-    element.classList.remove("show");
+    modal.classList.add("hide");
+    modal.classList.remove("show");
+    document.body.style.overflowY = "scroll";
 }
+
+// 클릭 이벤트시 함수호출 
+document.getElementById("clickBtn").addEventListener("click", showPopup);
 document.getElementById("closeBtn").addEventListener("click", closePopup);
+document.querySelector(".modal-layer").addEventListener("click", closePopup);
 
 })();
