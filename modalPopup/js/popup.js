@@ -1,6 +1,5 @@
 "use strict";
 
-
 (function () {
 var modal = document.getElementById("modalframe");
 
@@ -13,8 +12,11 @@ function showPopup () {
 
 // 닫기 버튼 또는 외부 클릭시 팝업 닫기 함수 선언
 function closePopup () {
-    modal.classList.add("hide");
-    modal.classList.remove("show");
+    modal.classList.add("hide")
+    setTimeout (function () {
+        modal.classList.remove("show");
+    },1000);
+    
     document.body.style.overflowY = "scroll";
 }
 
