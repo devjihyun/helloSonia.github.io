@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>글자수 알아내기</title>
+    <style>
+        .box_tf {
+            width: 300px
+        }
+
+        #tf {
+            width: 280px;
+            height: 100px;
+            padding: 10px;
+            font-size: 18px
+        }
+
+        .txt_num {
+            float: right;
+            font-size: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_tf">
+        <textarea name="tf" id="tf" cols="30" rows="10">몇글자일까요? 알아맞춰 보세요ㅋㅋㅋ</textarea>
+        <strong class="txt_num"><span id="countText">0</span>/1,000</strong>
+    </div>
+<script>
+// 텍스트 입력 수 구하기
+var text = document.querySelector('#tf');
+var textLength = text.textContent.length;
+
+// 구한 갯수 카운터에 넣기
+var count = document.querySelector('#countText');
+var countVal = textLength;
+count.value = countVal;
+count.innerHTML = textLength;
+</script>
+</body>
+
+</html>
