@@ -4,7 +4,7 @@
 
 ## [결과화면보기](https://hellosonia.github.io/string/index.html)
 
-## [소스보기](view-source:https://hellosonia.github.io/string/index.html)
+## [소스보기](https://hellosonia.github.io/string/index.js)
 
 
 # Modal Popup
