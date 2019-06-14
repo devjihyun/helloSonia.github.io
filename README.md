@@ -2,9 +2,9 @@
 
 # 텍스트 입력 수 알아내기
 
-## [결과화면보기](https://hellosonia.github.io/string/index.html)
+## [결과화면보기](https://hellosonia.github.io/studyCoP01/ex01-base/sonia-ex01.html)
 
-## [소스보기](https://hellosonia.github.io/string/index.js)
+## [소스보기](https://hellosonia.github.io/studyCoP01/ex01-base/sonia-ex01.js)
 
 
 # Modal Popup
